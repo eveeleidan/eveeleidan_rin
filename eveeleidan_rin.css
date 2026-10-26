@@ -1663,6 +1663,24 @@ main.py-4 {
     order: unset;
     }
 
+    body:is(.theme-zont, .bodybg:not(.theme-svitok):not(.theme-noch))
+.blog__about:has(> img.mw-100)::before,
+body:is(.theme-zont, .bodybg:not(.theme-svitok):not(.theme-noch))
+.blog__about :has(> img.mw-100)::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 110px;
+    z-index: 2;
+    width: 65px;
+    height: 18px;
+    transform: rotate(-20deg);
+    background: #ad9b7e55;
+    border-left: 1px dashed #ad9b7e88;
+    border-right: 1px dashed #ad9b7e88;
+    pointer-events: none;
+}
+
 nav.navbar .menu__box {
     box-sizing: border-box !important;
     background: #323834 !important;
